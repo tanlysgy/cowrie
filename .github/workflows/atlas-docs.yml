@@ -30,11 +30,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      ATLAS_UPSTREAM: __UPSTREAM__
+      ATLAS_UPSTREAM: cowrie/cowrie
     steps:
       - uses: actions/checkout@v7
         with:
-          repository: __UPSTREAM__
+          repository: cowrie/cowrie
           fetch-depth: 1
       - uses: actions/setup-python@v6
         with:
